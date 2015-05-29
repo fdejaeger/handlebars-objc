@@ -189,6 +189,65 @@
 		06F493BB1802D75E0055B5BC /* HBTestBuiltinBlockHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E478F317FAC84D0029C3D1 /* HBTestBuiltinBlockHelpers.m */; };
 		06F601FE1812D0CD0019D9C1 /* HBExecutionContextDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 06F601FD1812D0CD0019D9C1 /* HBExecutionContextDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		06F601FF1812D0CD0019D9C1 /* HBExecutionContextDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 06F601FD1812D0CD0019D9C1 /* HBExecutionContextDelegate.h */; };
+		495C59D21B18AE0500B63091 /* HBHandlebars.m in Sources */ = {isa = PBXBuildFile; fileRef = 06556D9417FF178300070907 /* HBHandlebars.m */; };
+		495C59D31B18AE0500B63091 /* HBAstBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 06798D3217F5B6EF00FC40D7 /* HBAstBlock.m */; };
+		495C59D41B18AE0500B63091 /* HBAstComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A81AA017F8D3750006F16A /* HBAstComment.m */; };
+		495C59D51B18AE0500B63091 /* HBAstNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0630B1C917F33EB500EA7018 /* HBAstNode.m */; };
+		495C59D61B18AE0500B63091 /* HBAstPartialTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 06798D3A17F5C5AE00FC40D7 /* HBAstPartialTag.m */; };
+		495C59D71B18AE0500B63091 /* HBAstProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 0630B1CD17F33EDA00EA7018 /* HBAstProgram.m */; };
+		495C59D81B18AE0500B63091 /* HBAstRawText.m in Sources */ = {isa = PBXBuildFile; fileRef = 06798D5C17F5D7AD00FC40D7 /* HBAstRawText.m */; };
+		495C59D91B18AE0500B63091 /* HBAstSimpleTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 06798D2E17F5AFA900FC40D7 /* HBAstSimpleTag.m */; };
+		495C59DA1B18AE0500B63091 /* HBAstTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 06798D3617F5B70200FC40D7 /* HBAstTag.m */; };
+		495C59DB1B18AE0500B63091 /* HBAstContextualValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 06798D4017F5CA3500FC40D7 /* HBAstContextualValue.m */; };
+		495C59DC1B18AE0500B63091 /* HBAstExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 06798D4217F5CA3500FC40D7 /* HBAstExpression.m */; };
+		495C59DD1B18AE0500B63091 /* HBAstKeyPathComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 06798D4417F5CA3500FC40D7 /* HBAstKeyPathComponent.m */; };
+		495C59DE1B18AE0500B63091 /* HBAstNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 06798D4617F5CA3500FC40D7 /* HBAstNumber.m */; };
+		495C59DF1B18AE0500B63091 /* HBAstString.m in Sources */ = {isa = PBXBuildFile; fileRef = 06798D4817F5CA3500FC40D7 /* HBAstString.m */; };
+		495C59E01B18AE0500B63091 /* HBAstValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 06798D4A17F5CA3500FC40D7 /* HBAstValue.m */; };
+		495C59E11B18AE0500B63091 /* HBAstParametersHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 06279A0818E0CFF000DB552E /* HBAstParametersHash.m */; };
+		495C59E21B18AE0500B63091 /* HBAstVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A81A9617F86ECE0006F16A /* HBAstVisitor.m */; };
+		495C59E31B18AE0500B63091 /* HBAstParserTestVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A81A9A17F879240006F16A /* HBAstParserTestVisitor.m */; };
+		495C59E41B18AE0500B63091 /* HBAstEvaluationVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 06798D6317F9A12A00FC40D7 /* HBAstEvaluationVisitor.m */; };
+		495C59E51B18AE0500B63091 /* HBAstParserPostprocessingVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 062799FF18DF49BF00DB552E /* HBAstParserPostprocessingVisitor.m */; };
+		495C59E61B18AE0500B63091 /* HBContextStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 065C287B17FA166C00894DD4 /* HBContextStack.m */; };
+		495C59E71B18AE0500B63091 /* HBContextState.m in Sources */ = {isa = PBXBuildFile; fileRef = 06798D6817F9B22D00FC40D7 /* HBContextState.m */; };
+		495C59E81B18AE0500B63091 /* HBContextRendering.m in Sources */ = {isa = PBXBuildFile; fileRef = 06743FB417FB572B001793F7 /* HBContextRendering.m */; };
+		495C59E91B18AE0500B63091 /* HBDataContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E4790917FC0CA90029C3D1 /* HBDataContext.m */; };
+		495C59EA1B18AE0500B63091 /* HBObjectPropertyAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 060EEF54180D7460009F2C0A /* HBObjectPropertyAccess.m */; };
+		495C59EB1B18AE0500B63091 /* HBErrorHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = 061ACEA0180C1C8E00081763 /* HBErrorHandling.m */; };
+		495C59EC1B18AE0500B63091 /* HBEscapedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 063FE3F818EDA51B002F6738 /* HBEscapedString.m */; };
+		495C59ED1B18AE0500B63091 /* HBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D426BC17FC5E4200C41476 /* HBHelper.m */; };
+		495C59EE1B18AE0500B63091 /* HBHelperCallingInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0698F02417FEC78A005203F6 /* HBHelperCallingInfo.m */; };
+		495C59EF1B18AE0500B63091 /* HBHelperRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D426C017FC62A000C41476 /* HBHelperRegistry.m */; };
+		495C59F01B18AE0500B63091 /* HBHelperUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D4DBD6180B4E4700278279 /* HBHelperUtils.m */; };
+		495C59F11B18AE0500B63091 /* HBBuiltinHelpersRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 06743FB818005CFB001793F7 /* HBBuiltinHelpersRegistry.m */; };
+		495C59F21B18AE0500B63091 /* handlebars-objc.lm in Sources */ = {isa = PBXBuildFile; fileRef = 0630B1BA17F2EFE600EA7018 /* handlebars-objc.lm */; };
+		495C59F31B18AE0500B63091 /* handlebars-objc.ym in Sources */ = {isa = PBXBuildFile; fileRef = 0630B1BB17F2EFE600EA7018 /* handlebars-objc.ym */; };
+		495C59F41B18AE0500B63091 /* HBParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0630B1D817F466B800EA7018 /* HBParser.m */; };
+		495C59F51B18AE0500B63091 /* HBPartial.m in Sources */ = {isa = PBXBuildFile; fileRef = 06556D7E17FEFB0C00070907 /* HBPartial.m */; };
+		495C59F61B18AE0500B63091 /* HBPartialRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 06556D8217FEFB7C00070907 /* HBPartialRegistry.m */; };
+		495C59F71B18AE0500B63091 /* HBEscapingFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 061884DE18205AD300D1012F /* HBEscapingFunctions.m */; };
+		495C59F81B18AE0500B63091 /* HBExecutionContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 06556D8A17FF177700070907 /* HBExecutionContext.m */; };
+		495C59F91B18AE0500B63091 /* HBTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06556D8C17FF177700070907 /* HBTemplate.m */; };
+		495C59FA1B18AE3F00B63091 /* HBHandlebars.h in Headers */ = {isa = PBXBuildFile; fileRef = 06556D9317FF178300070907 /* HBHandlebars.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		495C59FB1B18AE3F00B63091 /* HBAstParametersHash.h in Headers */ = {isa = PBXBuildFile; fileRef = 06279A0718E0CFF000DB552E /* HBAstParametersHash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		495C59FC1B18AE3F00B63091 /* HBAstParserPostprocessingVisitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 062799FE18DF49BF00DB552E /* HBAstParserPostprocessingVisitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		495C59FD1B18AE3F00B63091 /* HBDataContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 06E4790817FC0CA90029C3D1 /* HBDataContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		495C59FE1B18AE3F00B63091 /* HBObjectPropertyAccess.h in Headers */ = {isa = PBXBuildFile; fileRef = 060EEF53180D7460009F2C0A /* HBObjectPropertyAccess.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		495C59FF1B18AE3F00B63091 /* HBErrorHandling.h in Headers */ = {isa = PBXBuildFile; fileRef = 061ACE9F180C1C8E00081763 /* HBErrorHandling.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		495C5A001B18AE3F00B63091 /* HBEscapedString.h in Headers */ = {isa = PBXBuildFile; fileRef = 063FE3F718EDA51B002F6738 /* HBEscapedString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		495C5A011B18AE3F00B63091 /* HBEscapedString_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 063FE3FD18EDB430002F6738 /* HBEscapedString_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		495C5A021B18AE3F00B63091 /* HBHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 06D426BB17FC5E4200C41476 /* HBHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		495C5A031B18AE3F00B63091 /* HBHelperCallingInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 0698F02317FEC78A005203F6 /* HBHelperCallingInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		495C5A041B18AE3F00B63091 /* HBHelperRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = 06D426BF17FC62A000C41476 /* HBHelperRegistry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		495C5A051B18AE3F00B63091 /* HBHelperUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 06D4DBD5180B4E4700278279 /* HBHelperUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		495C5A061B18AE3F00B63091 /* HBPartial.h in Headers */ = {isa = PBXBuildFile; fileRef = 06556D7D17FEFB0C00070907 /* HBPartial.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		495C5A071B18AE3F00B63091 /* HBPartialRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = 06556D8117FEFB7C00070907 /* HBPartialRegistry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		495C5A081B18AE3F00B63091 /* HBEscapingFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 061884DD18205AD300D1012F /* HBEscapingFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		495C5A091B18AE3F00B63091 /* HBExecutionContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 06556D8917FF177700070907 /* HBExecutionContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		495C5A0A1B18AE3F00B63091 /* HBExecutionContext_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 061884E3182565FA00D1012F /* HBExecutionContext_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		495C5A0B1B18AE3F00B63091 /* HBExecutionContextDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 06F601FD1812D0CD0019D9C1 /* HBExecutionContextDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		495C5A0C1B18AE3F00B63091 /* HBTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 06556D8B17FF177700070907 /* HBTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -352,6 +411,9 @@
 		06F4934F1802D07F0055B5BC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		06F493B51802D59F0055B5BC /* handlebars-objc-ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "handlebars-objc-ios-Prefix.pch"; sourceTree = "<group>"; };
 		06F601FD1812D0CD0019D9C1 /* HBExecutionContextDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBExecutionContextDelegate.h; sourceTree = "<group>"; };
+		495C59B91B18AD0300B63091 /* Handlebars.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Handlebars.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		495C59BC1B18AD0400B63091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		495C59BD1B18AD0400B63091 /* Handlebars.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Handlebars.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -393,6 +455,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		495C59B51B18AD0300B63091 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -413,6 +482,7 @@
 				06798D5F17F9A06900FC40D7 /* doc */,
 				0630B19117F2EF9100EA7018 /* handlebars-objc */,
 				0630B1A617F2EF9100EA7018 /* handlebars-objcTests */,
+				495C59BA1B18AD0400B63091 /* Handlebars */,
 				0630B18A17F2EF9100EA7018 /* Frameworks */,
 				0630B18917F2EF9100EA7018 /* Products */,
 				06AB0B10180BDA48005A7610 /* utils */,
@@ -426,6 +496,7 @@
 				0630B19F17F2EF9100EA7018 /* handlebars-objc-osx-tests.xctest */,
 				06F4933E1802D07F0055B5BC /* libhandlebars-objc-ios.a */,
 				06F4934C1802D07F0055B5BC /* handlebars-objc-iosTests.xctest */,
+				495C59B91B18AD0300B63091 /* Handlebars.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -678,6 +749,23 @@
 			path = helpers;
 			sourceTree = "<group>";
 		};
+		495C59BA1B18AD0400B63091 /* Handlebars */ = {
+			isa = PBXGroup;
+			children = (
+				495C59BD1B18AD0400B63091 /* Handlebars.h */,
+				495C59BB1B18AD0400B63091 /* Supporting Files */,
+			);
+			path = Handlebars;
+			sourceTree = "<group>";
+		};
+		495C59BB1B18AD0400B63091 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				495C59BC1B18AD0400B63091 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -757,6 +845,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		495C59B61B18AD0300B63091 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495C5A091B18AE3F00B63091 /* HBExecutionContext.h in Headers */,
+				495C5A021B18AE3F00B63091 /* HBHelper.h in Headers */,
+				495C59FA1B18AE3F00B63091 /* HBHandlebars.h in Headers */,
+				495C59FB1B18AE3F00B63091 /* HBAstParametersHash.h in Headers */,
+				495C5A0B1B18AE3F00B63091 /* HBExecutionContextDelegate.h in Headers */,
+				495C5A031B18AE3F00B63091 /* HBHelperCallingInfo.h in Headers */,
+				495C59FE1B18AE3F00B63091 /* HBObjectPropertyAccess.h in Headers */,
+				495C59FD1B18AE3F00B63091 /* HBDataContext.h in Headers */,
+				495C59FC1B18AE3F00B63091 /* HBAstParserPostprocessingVisitor.h in Headers */,
+				495C5A041B18AE3F00B63091 /* HBHelperRegistry.h in Headers */,
+				495C5A081B18AE3F00B63091 /* HBEscapingFunctions.h in Headers */,
+				495C5A001B18AE3F00B63091 /* HBEscapedString.h in Headers */,
+				495C5A0C1B18AE3F00B63091 /* HBTemplate.h in Headers */,
+				495C59FF1B18AE3F00B63091 /* HBErrorHandling.h in Headers */,
+				495C5A051B18AE3F00B63091 /* HBHelperUtils.h in Headers */,
+				495C5A011B18AE3F00B63091 /* HBEscapedString_Private.h in Headers */,
+				495C5A061B18AE3F00B63091 /* HBPartial.h in Headers */,
+				495C5A071B18AE3F00B63091 /* HBPartialRegistry.h in Headers */,
+				495C5A0A1B18AE3F00B63091 /* HBExecutionContext_Private.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -833,6 +947,24 @@
 			productReference = 06F4934C1802D07F0055B5BC /* handlebars-objc-iosTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		495C59B81B18AD0300B63091 /* Handlebars */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 495C59D01B18AD0400B63091 /* Build configuration list for PBXNativeTarget "Handlebars" */;
+			buildPhases = (
+				495C59B41B18AD0300B63091 /* Sources */,
+				495C59B51B18AD0300B63091 /* Frameworks */,
+				495C59B61B18AD0300B63091 /* Headers */,
+				495C59B71B18AD0300B63091 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Handlebars;
+			productName = Handlebars;
+			productReference = 495C59B91B18AD0300B63091 /* Handlebars.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -847,6 +979,9 @@
 					};
 					06F4934B1802D07F0055B5BC = {
 						TestTargetID = 06F4933D1802D07F0055B5BC;
+					};
+					495C59B81B18AD0300B63091 = {
+						CreatedOnToolsVersion = 6.3.2;
 					};
 				};
 			};
@@ -866,6 +1001,7 @@
 				0630B19E17F2EF9100EA7018 /* handlebars-objc-osx-tests */,
 				06F4933D1802D07F0055B5BC /* handlebars-objc-ios */,
 				06F4934B1802D07F0055B5BC /* handlebars-objc-iosTests */,
+				495C59B81B18AD0300B63091 /* Handlebars */,
 			);
 		};
 /* End PBXProject section */
@@ -888,6 +1024,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		06F4934A1802D07F0055B5BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		495C59B71B18AD0300B63091 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1049,6 +1192,53 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		495C59B41B18AD0300B63091 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495C59EA1B18AE0500B63091 /* HBObjectPropertyAccess.m in Sources */,
+				495C59E21B18AE0500B63091 /* HBAstVisitor.m in Sources */,
+				495C59F11B18AE0500B63091 /* HBBuiltinHelpersRegistry.m in Sources */,
+				495C59D31B18AE0500B63091 /* HBAstBlock.m in Sources */,
+				495C59ED1B18AE0500B63091 /* HBHelper.m in Sources */,
+				495C59EE1B18AE0500B63091 /* HBHelperCallingInfo.m in Sources */,
+				495C59DB1B18AE0500B63091 /* HBAstContextualValue.m in Sources */,
+				495C59E51B18AE0500B63091 /* HBAstParserPostprocessingVisitor.m in Sources */,
+				495C59E61B18AE0500B63091 /* HBContextStack.m in Sources */,
+				495C59D81B18AE0500B63091 /* HBAstRawText.m in Sources */,
+				495C59E31B18AE0500B63091 /* HBAstParserTestVisitor.m in Sources */,
+				495C59E81B18AE0500B63091 /* HBContextRendering.m in Sources */,
+				495C59D21B18AE0500B63091 /* HBHandlebars.m in Sources */,
+				495C59DE1B18AE0500B63091 /* HBAstNumber.m in Sources */,
+				495C59D91B18AE0500B63091 /* HBAstSimpleTag.m in Sources */,
+				495C59DA1B18AE0500B63091 /* HBAstTag.m in Sources */,
+				495C59DC1B18AE0500B63091 /* HBAstExpression.m in Sources */,
+				495C59D51B18AE0500B63091 /* HBAstNode.m in Sources */,
+				495C59E01B18AE0500B63091 /* HBAstValue.m in Sources */,
+				495C59E11B18AE0500B63091 /* HBAstParametersHash.m in Sources */,
+				495C59EB1B18AE0500B63091 /* HBErrorHandling.m in Sources */,
+				495C59F51B18AE0500B63091 /* HBPartial.m in Sources */,
+				495C59E71B18AE0500B63091 /* HBContextState.m in Sources */,
+				495C59DF1B18AE0500B63091 /* HBAstString.m in Sources */,
+				495C59F31B18AE0500B63091 /* handlebars-objc.ym in Sources */,
+				495C59D41B18AE0500B63091 /* HBAstComment.m in Sources */,
+				495C59F81B18AE0500B63091 /* HBExecutionContext.m in Sources */,
+				495C59E91B18AE0500B63091 /* HBDataContext.m in Sources */,
+				495C59F21B18AE0500B63091 /* handlebars-objc.lm in Sources */,
+				495C59DD1B18AE0500B63091 /* HBAstKeyPathComponent.m in Sources */,
+				495C59F01B18AE0500B63091 /* HBHelperUtils.m in Sources */,
+				495C59E41B18AE0500B63091 /* HBAstEvaluationVisitor.m in Sources */,
+				495C59F41B18AE0500B63091 /* HBParser.m in Sources */,
+				495C59EF1B18AE0500B63091 /* HBHelperRegistry.m in Sources */,
+				495C59F61B18AE0500B63091 /* HBPartialRegistry.m in Sources */,
+				495C59EC1B18AE0500B63091 /* HBEscapedString.m in Sources */,
+				495C59D61B18AE0500B63091 /* HBAstPartialTag.m in Sources */,
+				495C59F91B18AE0500B63091 /* HBTemplate.m in Sources */,
+				495C59D71B18AE0500B63091 /* HBAstProgram.m in Sources */,
+				495C59F71B18AE0500B63091 /* HBEscapingFunctions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1115,6 +1305,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MACOSX_DEPLOYMENT_TARGET = "";
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
@@ -1147,6 +1338,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MACOSX_DEPLOYMENT_TARGET = "";
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
@@ -1311,6 +1503,67 @@
 			};
 			name = Release;
 		};
+		495C59CC1B18AD0400B63091 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "handlebars-objc/handlebars-objc-Prefix.pch";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		495C59CD1B18AD0400B63091 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "handlebars-objc/handlebars-objc-Prefix.pch";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1355,6 +1608,15 @@
 			buildConfigurations = (
 				06F493601802D0800055B5BC /* Debug */,
 				06F493611802D0800055B5BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		495C59D01B18AD0400B63091 /* Build configuration list for PBXNativeTarget "Handlebars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				495C59CC1B18AD0400B63091 /* Debug */,
+				495C59CD1B18AD0400B63091 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
