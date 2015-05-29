@@ -947,9 +947,9 @@
 			productReference = 06F4934C1802D07F0055B5BC /* handlebars-objc-iosTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		495C59B81B18AD0300B63091 /* Handlebars */ = {
+		495C59B81B18AD0300B63091 /* HBHandlebars */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 495C59D01B18AD0400B63091 /* Build configuration list for PBXNativeTarget "Handlebars" */;
+			buildConfigurationList = 495C59D01B18AD0400B63091 /* Build configuration list for PBXNativeTarget "HBHandlebars" */;
 			buildPhases = (
 				495C59B41B18AD0300B63091 /* Sources */,
 				495C59B51B18AD0300B63091 /* Frameworks */,
@@ -960,7 +960,7 @@
 			);
 			dependencies = (
 			);
-			name = Handlebars;
+			name = HBHandlebars;
 			productName = Handlebars;
 			productReference = 495C59B91B18AD0300B63091 /* Handlebars.framework */;
 			productType = "com.apple.product-type.framework";
@@ -1001,7 +1001,7 @@
 				0630B19E17F2EF9100EA7018 /* handlebars-objc-osx-tests */,
 				06F4933D1802D07F0055B5BC /* handlebars-objc-ios */,
 				06F4934B1802D07F0055B5BC /* handlebars-objc-iosTests */,
-				495C59B81B18AD0300B63091 /* Handlebars */,
+				495C59B81B18AD0300B63091 /* HBHandlebars */,
 			);
 		};
 /* End PBXProject section */
@@ -1606,7 +1606,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		495C59D01B18AD0400B63091 /* Build configuration list for PBXNativeTarget "Handlebars" */ = {
+		495C59D01B18AD0400B63091 /* Build configuration list for PBXNativeTarget "HBHandlebars" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				495C59CC1B18AD0400B63091 /* Debug */,
