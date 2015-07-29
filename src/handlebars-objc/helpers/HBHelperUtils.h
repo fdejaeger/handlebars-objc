@@ -52,7 +52,8 @@
  - NSNumber : return true if the corresponding value is greater than zero, false otherwise.
  - NSString : return true if the string is not empty.
  - NSArray : return true if the array is not empty.
- - otherwise : return false
+ - NSNull: return false
+ - otherwise : return true
  @param object the object to evaluate
  @since v1.0
  */

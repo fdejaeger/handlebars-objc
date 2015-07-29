@@ -41,6 +41,10 @@
     id string = @"{{#if goodbye}}GOODBYE {{/if}}cruel {{world}}!";
     NSError* error = nil;
     
+    XCTAssertEqualObjects(([HBHandlebars renderTemplateString:string withContext:@{ @"world": @"world", @"goodbye" : @{@"bla":@"blu"}} error:&error]),
+                          @"GOODBYE cruel world!");
+    XCTAssert(!error, @"evaluation should not generate an error");
+
     XCTAssertEqualObjects(([HBHandlebars renderTemplateString:string withContext:@{ @"world": @"world", @"goodbye" : @"true"} error:&error]),
                           @"GOODBYE cruel world!");
     XCTAssert(!error, @"evaluation should not generate an error");

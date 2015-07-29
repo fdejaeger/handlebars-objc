@@ -101,7 +101,8 @@
     if ([object isKindOfClass:[NSNumber class]]) return [object boolValue];
     if ([object isKindOfClass:[NSString class]]) return [object length] > 0;
     if ([object isKindOfClass:[NSArray class]]) return [object count] > 0;
-    return false;
+    if ([object isEqual:[NSNull null]]) return false;
+    return true;
 }
 
 + (NSInteger)evaluateObjectAsInteger:(id)object
