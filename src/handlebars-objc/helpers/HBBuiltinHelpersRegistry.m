@@ -182,8 +182,14 @@ static HBBuiltinHelpersRegistry* _builtinHelpersRegistry = nil;
 + (void) registerWithBlock
 {
     HBHelperBlock withBlock = ^(HBHelperCallingInfo* callingInfo) {
+        
+        if ([HBBuiltinHelpersRegistry _firstParamEvaluatesToTrue:callingInfo]) {
             return callingInfo.statements(callingInfo[0], callingInfo.data);
+        } else {
+            return callingInfo.inverseStatements(callingInfo.context, callingInfo.data);
+        }
     };
+
     [_builtinHelpersRegistry registerHelperBlock:withBlock forName:@"with"];
 
 }

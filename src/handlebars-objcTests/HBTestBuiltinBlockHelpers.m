@@ -121,9 +121,13 @@
 - (void) testWith
 {
     NSError* error = nil;
-    id string = @"{{#with person}}{{first}} {{last}}{{/with}}";
-    XCTAssertEqualObjects(([HBHandlebars renderTemplateString:string withContext:@{@"person": @{@"first": @"Alan", @"last": @"Johnson"}} error:&error]), @"Alan Johnson");
+    id string = @"{{#with person}}{{first}}, {{last}}{{else}}none{{/with}}";
+    XCTAssertEqualObjects(([HBHandlebars renderTemplateString:string withContext:@{@"person": @{@"first": @"Alan", @"last": @"Johnson"}} error:&error]), @"Alan, Johnson");
     XCTAssert(!error, @"evaluation should not generate an error");
+
+    XCTAssertEqualObjects(([HBHandlebars renderTemplateString:string withContext:@{@"persono": @{@"first": @"Alan", @"last": @"Johnson"}} error:&error]), @"none");
+    XCTAssert(!error, @"evaluation should not generate an error");
+
 }
 
 
