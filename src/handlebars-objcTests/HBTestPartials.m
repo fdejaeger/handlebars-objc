@@ -40,7 +40,13 @@ NSString* renderWithPartialsReturningError(NSString* string, id context, NSDicti
 
 NSString* renderWithPartials(NSString* string, id context, NSDictionary* partials)
 {
-    return renderWithPartialsReturningError(string, context, partials, nil);
+    NSError* error = nil;
+    NSString* ret =  renderWithPartialsReturningError(string, context, partials, &error);
+    if (error) {
+        NSLog(@"got error %@", error);
+        return @"Error returned";
+    }
+    return ret;
 }
 
 
@@ -79,6 +85,18 @@ NSString* renderWithPartials(NSString* string, id context, NSDictionary* partial
     NSString* result = renderWithPartials(string, hash, @{@"dude": partial});
     XCTAssertEqualObjects(result, @"Dudes: barYehuda (http://yehuda) barAlan (http://alan) ");
 }
+
+// partials with parameters with parent context lookup.
+- (void) testPartialsWithParameters2
+{
+    id string = @"{{> dude glop=foo}}";
+    id partial = @"{{#each dudes}}{{name}}:{{../glop}} {{../glup}},{{/each}}";
+    id hash = @{ @"foo": @"bar", @"dudes": @[ @{ @"name": @"Yehuda"} ] , @"glup":@"yo" };
+    
+    NSString* result = renderWithPartials(string, hash, @{@"dude": partial});
+    XCTAssertEqualObjects(result, @"Yehuda:bar yo,");
+}
+
 
 // partial in a partial
 - (void) testPartialInAPartial

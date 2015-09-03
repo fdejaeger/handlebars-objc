@@ -89,7 +89,7 @@
     BOOL atRootLevel = true;
     while (index < pathComponents.count && current) {
         NSString* key = [pathComponents[index] key];
-        current = [self valueForKey:key context:current includeMergedAttributes:atRootLevel];
+        current = [startState valueForKey:key context:current includeMergedAttributes:atRootLevel];
         atRootLevel = false;
         index++;
     }
