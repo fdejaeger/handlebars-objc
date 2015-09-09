@@ -140,6 +140,15 @@
 
 + (id) valueForKey:(NSString *)key onObject:(id)object
 {
+    if (object && [key isEqualToString:@"length"]) {
+        if ([object isKindOfClass:[NSArray class]]) {
+            return @([(NSArray*) object count]);
+        }
+        else if ([object isKindOfClass:[NSString class]]) {
+            return @([(NSString*) object length]);
+        }
+        
+    }
     // first, try keyed subscripting operator.
     if ([object respondsToSelector:@selector(objectForKeyedSubscript:)]) return object[key];
     

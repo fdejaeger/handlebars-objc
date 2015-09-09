@@ -77,6 +77,17 @@
     XCTAssert(!error, @"evaluation should not generate an error");
 }
 
+- (void) testLengthPseudoProperty
+{
+    NSError* error = nil;
+    XCTAssertEqualObjects([HBHandlebars renderTemplateString:@"Hop {{foo.length}}" withContext:@{ @"foo" : @[@"food"] } error:&error],
+                          @"Hop 1");
+
+    XCTAssertEqualObjects([HBHandlebars renderTemplateString:@"Hop {{foo.length}}" withContext:@{ @"foo" : @"food" } error:&error],
+                          @"Hop 4");
+
+}
+
 // compiling with a basic context
 - (void) testCompilingWithABasicContext
 {
